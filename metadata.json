@@ -1,6 +1,6 @@
 {
-  "name": "Campus Voice - Grievance Portal",
-  "description": "Full-Stack Grievance & Redressal Management Portal featuring Student, Moderator, and Maintenance Staff Modules.",
+  "name": "Campus Voice - Admin Portal",
+  "description": "Enterprise SaaS Admin Portal for campus grievance management, analytics, department resolution tracking, and announcements.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
