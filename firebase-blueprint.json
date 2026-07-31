@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "entities": {
+    "complaints": {
+      "collection": "complaints",
+      "description": "Student grievances and complaints",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "complaintId": { "type": "string", "required": true },
+        "subject": { "type": "string", "required": true },
+        "department": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "priority": { "type": "string", "required": true },
+        "status": { "type": "string", "required": true },
+        "description": { "type": "string", "required": true },
+        "location": { "type": "string", "required": false },
+        "submittedOn": { "type": "string", "required": true },
+        "submittedTime": { "type": "string", "required": true },
+        "lastUpdated": { "type": "string", "required": true },
+        "moderated": { "type": "boolean", "required": false },
+        "moderationStatus": { "type": "string", "required": false },
+        "moderationReason": { "type": "string", "required": false },
+        "attachments": { "type": "array", "required": false },
+        "timeline": { "type": "array", "required": false },
+        "remarks": { "type": "array", "required": false },
+        "createdAt": { "type": "number", "required": true }
+      }
+    },
+    "notifications": {
+      "collection": "notifications",
+      "description": "System and complaint status notifications",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "message": { "type": "string", "required": true },
+        "type": { "type": "string", "required": true },
+        "timestamp": { "type": "string", "required": true },
+        "read": { "type": "boolean", "required": true },
+        "important": { "type": "boolean", "required": true },
+        "complaintId": { "type": "string", "required": false },
+        "createdAt": { "type": "number", "required": true }
+      }
+    },
+    "profiles": {
+      "collection": "profiles",
+      "description": "User profiles for students and moderators",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "type": { "type": "string", "required": true },
+        "fullName": { "type": "string", "required": true },
+        "email": { "type": "string", "required": true },
+        "phone": { "type": "string", "required": true }
+      }
+    }
+  }
+}
